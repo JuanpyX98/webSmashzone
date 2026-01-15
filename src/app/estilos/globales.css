@@ -5,18 +5,28 @@
   --color-blanco: #fff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: var(--fondo-principal);
   font-family: var(--exo-2);
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
-h2{
-    text-align: center;
-    color: var(--principal);
-    margin: 2rem 0;
-    font-weight: 400;
+html,
+body {
+  touch-action: pan-y;
+}
+
+h2 {
+  text-align: center;
+  color: var(--principal);
+  margin: 2rem 0;
+  font-weight: 400;
 }
 
 .contenedor-principal {
