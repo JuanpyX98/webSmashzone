@@ -103,10 +103,10 @@
   width: 30%;
 }
 
-.contenedor-mockop{
-    position: relative;
-    width: 35rem;
-    height: 25rem;
+.contenedor-mockop {
+  position: relative;
+  width: 35rem;
+  height: 25rem;
 }
 
 .contenedor-textos-cabecera p,
@@ -166,9 +166,11 @@ h1 {
   .contenedor-textos-cabecera {
     width: 80%;
   }
-  .contenedor-textos-cabecera h1,
-  .contenedor-textos-cabecera p {
+  .contenedor-textos-cabecera h1{
     color: var(--principal);
+  }
+  .contenedor-textos-cabecera p{
+    color: var(--color-gris);
   }
   .boton-contacto {
     color: var(--principal);
@@ -218,7 +220,7 @@ h1 {
     place-items: center;
     gap: 2rem;
   }
-  .contenedor-mockop{
+  .contenedor-mockop {
     width: 30rem;
     height: 20rem;
   }

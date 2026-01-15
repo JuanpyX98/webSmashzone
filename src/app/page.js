@@ -73,7 +73,7 @@ export default function Home() {
   ]);
 
   let [mostrarNavegacionResponsive, setMostrarNavegacionResponsive] =
-    useState(true);
+    useState(false);
 
   function abrirNavResp() {
     setMostrarNavegacionResponsive(!mostrarNavegacionResponsive);
