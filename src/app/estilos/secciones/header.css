@@ -1,0 +1,225 @@
+@import url("../globales.css");
+
+.cabecera {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.contenedor-navegacion {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* margin: 1rem 0; */
+}
+
+.navegacion .nav {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: var(--principal);
+  font-weight: bold;
+}
+
+.barra-interna {
+  position: relative;
+  width: 100%;
+  height: 0.15rem;
+  background-color: var(--color-gris);
+  overflow: hidden;
+}
+
+.barra-selectora {
+  position: absolute;
+  top: 0;
+  height: 0.15rem;
+  background-color: var(--principal);
+  z-index: 10;
+  width: 18rem;
+  left: -20rem;
+  transition: left ease 1s;
+}
+
+.modo-responsive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.seleccion-acerca-de {
+  left: 0rem;
+  transition: left ease 1s;
+}
+
+.seleccion-servicios {
+  left: 14rem;
+  transition: left ease 1s;
+}
+
+.seleccion-contacto {
+  left: 28rem;
+  transition: left ease 1s;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+}
+
+.difuminado {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    var(--principal),
+    var(--fondo-principal)
+  );
+}
+
+.menu-cabecera {
+  position: relative;
+  /* z-index: 10; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contenedor-textos-cabecera {
+  margin-top: 2rem;
+  width: 30%;
+}
+
+.contenedor-mockop{
+    position: relative;
+    width: 35rem;
+    height: 25rem;
+}
+
+.contenedor-textos-cabecera p,
+h1 {
+  color: var(--color-blanco);
+}
+
+.contenedor-textos-cabecera div {
+  margin: 0;
+  width: fit-content;
+}
+
+.boton-contacto {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color-blanco);
+}
+
+.footer-cabecera {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-cabecera .data {
+  background-color: var(--fondo-principal);
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-align: center;
+  color: var(--principal);
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.8rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.icono-menu {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .difuminado {
+    display: none;
+  }
+
+  .menu-cabecera {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-textos-cabecera {
+    width: 80%;
+  }
+  .contenedor-textos-cabecera h1,
+  .contenedor-textos-cabecera p {
+    color: var(--principal);
+  }
+  .boton-contacto {
+    color: var(--principal);
+  }
+}
+
+@media (max-width: 600px) {
+  .icono-menu {
+    display: block;
+    position: absolute !important;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 400 !important;
+  }
+  .barra-interna,
+  .barra-selectora {
+    display: none;
+  }
+
+  .contenedor-navegacion {
+    width: 100%;
+  }
+
+  .navegacion {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modo-responsive {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    left: 100vw;
+    top: 0;
+    z-index: 200 !important;
+    transition: left ease 1s;
+    background-color: wheat;
+  }
+  .modo-responsive-activo {
+    left: 0 !important;
+    background-color: wheat;
+    height: 100vh !important;
+  }
+  .footer-cabecera {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 2rem;
+  }
+  .contenedor-mockop{
+    width: 30rem;
+    height: 20rem;
+  }
+}

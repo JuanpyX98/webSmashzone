@@ -1,0 +1,6 @@
+.acerca-de p{
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    color: var(--color-gris);
+}

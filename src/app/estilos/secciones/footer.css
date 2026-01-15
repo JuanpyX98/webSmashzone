@@ -1,0 +1,5 @@
+footer p{
+    text-align: center;
+    color: var(--color-gris);
+    margin: 2rem 0;
+}

@@ -1,0 +1,25 @@
+:root {
+  --fondo-principal: #d9d9d9;
+  --color-gris: #7e7878;
+  --principal: #f37957;
+  --color-blanco: #fff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--fondo-principal);
+  font-family: var(--exo-2);
+  overflow-x: hidden;
+}
+
+h2{
+    text-align: center;
+    color: var(--principal);
+    margin: 2rem 0;
+    font-weight: 400;
+}
+
+.contenedor-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,53 @@
+.contenedor-contacto{
+    width: 80%;
+    min-height: 14rem;
+    box-shadow: 0rem 0rem 1rem 0.4rem rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: var(--principal);
+    padding: 2rem 0;
+}
+
+.botones-contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boton-seccion-contacto{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--principal);
+    padding: 0.4rem 1rem;
+    box-shadow: 0rem 0rem 1rem 0.3rem rgba(0, 0, 0, .2);
+    background-color: var(--fondo-principal);
+    border-radius: 0.6rem;
+    transition: box-shadow ease 1s;
+}
+
+.boton-seccion-contacto:hover{
+    box-shadow: 0rem 0rem 1rem 0.6rem rgba(0, 0, 0, .2);
+    transition: box-shadow ease 0.1s;
+    cursor: pointer;
+}
+
+.contenedor-contacto p{
+    text-align: center;
+    color: var(--color-blanco);
+}
+
+@media (max-width: 900px){
+    .botones-contacto{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}

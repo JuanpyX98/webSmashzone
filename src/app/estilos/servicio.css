@@ -1,0 +1,61 @@
+.servicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.servicio img {
+  border-radius: 1rem;
+  z-index: 10;
+  box-shadow: 0rem 0rem 1rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.servicio .informacion {
+  position: relative;
+  width: 30rem;
+  min-height: 12rem;
+  box-shadow: 0rem 0rem 1rem 0.4rem rgba(0, 0, 0, 0.2);
+  background-color: var(--fondo-principal);
+  transform: translate(-2rem, 2rem);
+  border-radius: 1rem;
+}
+
+.servicio h3 {
+  text-align: center;
+  color: var(--principal);
+}
+
+.servicio p {
+  margin: 0 3rem;
+  color: var(--color-gris);
+  margin-bottom: 1.2rem;
+  line-height: 1.5rem;
+}
+
+/* SERVICIO IMPAR CAMBIA DE LADO */
+
+.servicio-reverse {
+  flex-direction: row-reverse;
+}
+
+.informacion-reverse {
+  transform: translate(2rem, 2rem) !important;
+}
+
+@media (max-width: 900px) {
+  .servicio {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .servicio img {
+    transform: translateY(1rem);
+  }
+  .servicio .informacion {
+    padding-top: 1rem;
+    transform: none !important;
+    width: 80%;
+  }
+}

@@ -1,0 +1,10 @@
+.boton{
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--principal);
+    padding: 0.4rem 1rem;
+    color: var(--color-blanco);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
